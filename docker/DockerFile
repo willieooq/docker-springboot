@@ -1,0 +1,5 @@
+FROM java
+WORKDIR /ROOT
+ADD /hellospringworld-0.0.1-SNAPSHOT.jar //
+ENTRYPOINT ["java","-jar","/hellospringworld-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-version"]
